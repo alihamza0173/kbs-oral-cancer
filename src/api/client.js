@@ -1,4 +1,8 @@
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const BASE = process.env.REACT_APP_API_URL || (
+  window.location.hostname === 'localhost'
+    ? 'http://localhost:8000'
+    : 'https://kbs-oral-cancer.onrender.com'
+);
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
