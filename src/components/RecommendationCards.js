@@ -8,10 +8,10 @@ const TYPE_STYLES = {
     badge: 'bg-red-100 text-red-700',
   },
   primary: {
-    border: 'border-l-blue-500',
-    bg: 'bg-blue-50',
-    icon: 'text-blue-600',
-    badge: 'bg-blue-100 text-blue-700',
+    border: 'border-l-clinical-500',
+    bg: 'bg-clinical-50',
+    icon: 'text-clinical-600',
+    badge: 'bg-clinical-100 text-clinical-700',
   },
   warning: {
     border: 'border-l-amber-500',
@@ -20,10 +20,10 @@ const TYPE_STYLES = {
     badge: 'bg-amber-100 text-amber-700',
   },
   info: {
-    border: 'border-l-slate-400',
-    bg: 'bg-slate-50',
-    icon: 'text-slate-500',
-    badge: 'bg-slate-100 text-slate-600',
+    border: 'border-l-clinical-300',
+    bg: 'bg-clinical-50/50',
+    icon: 'text-clinical-500',
+    badge: 'bg-clinical-100 text-clinical-600',
   },
 };
 
@@ -31,10 +31,10 @@ export default function RecommendationCards({ recommendations, alerts }) {
   if (!recommendations || recommendations.length === 0) return null;
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+    <div className="bg-white rounded-xl shadow-sm border border-clinical-200 p-6">
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
-          <svg className="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="w-10 h-10 rounded-lg bg-clinical-100 flex items-center justify-center">
+          <svg className="w-5 h-5 text-clinical-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </div>

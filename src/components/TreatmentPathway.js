@@ -2,15 +2,15 @@ import React from 'react';
 
 const STATUS_STYLES = {
   completed: {
-    dot: 'bg-emerald-500',
-    line: 'bg-emerald-300',
-    badge: 'bg-emerald-100 text-emerald-700',
+    dot: 'bg-clinical-600',
+    line: 'bg-clinical-300',
+    badge: 'bg-clinical-100 text-clinical-700',
     label: 'Completed',
   },
   active: {
-    dot: 'bg-blue-500 ring-4 ring-blue-100',
-    line: 'bg-blue-300',
-    badge: 'bg-blue-100 text-blue-700',
+    dot: 'bg-clinical-500 ring-4 ring-clinical-100',
+    line: 'bg-clinical-300',
+    badge: 'bg-clinical-100 text-clinical-700',
     label: 'Active',
   },
   recommended: {
@@ -20,9 +20,9 @@ const STATUS_STYLES = {
     label: 'Recommended',
   },
   conditional: {
-    dot: 'bg-purple-400',
-    line: 'bg-purple-200',
-    badge: 'bg-purple-100 text-purple-700',
+    dot: 'bg-clinical-400',
+    line: 'bg-clinical-200',
+    badge: 'bg-clinical-100 text-clinical-600',
     label: 'Conditional',
   },
   pending: {
@@ -37,10 +37,10 @@ export default function TreatmentPathway({ pathway }) {
   if (!pathway || pathway.length === 0) return null;
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+    <div className="bg-white rounded-xl shadow-sm border border-clinical-200 p-6">
       <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
-          <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="w-10 h-10 rounded-lg bg-clinical-100 flex items-center justify-center">
+          <svg className="w-5 h-5 text-clinical-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </div>

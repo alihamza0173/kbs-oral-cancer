@@ -1,9 +1,9 @@
 import React from 'react';
 
 const RISK_STYLES = {
-  Standard: { bg: 'bg-emerald-100', text: 'text-emerald-700', dot: 'bg-emerald-500' },
-  Moderate: { bg: 'bg-amber-100', text: 'text-amber-700', dot: 'bg-amber-500' },
-  High:     { bg: 'bg-red-100', text: 'text-red-700', dot: 'bg-red-500' },
+  Standard: { bg: 'bg-clinical-100', text: 'text-clinical-700', dot: 'bg-clinical-500' },
+  Moderate: { bg: 'bg-amber-100',    text: 'text-amber-700',    dot: 'bg-amber-500' },
+  High:     { bg: 'bg-econ-200',     text: 'text-econ-900',     dot: 'bg-red-500' },
 };
 
 export default function RiskBadge({ level }) {
